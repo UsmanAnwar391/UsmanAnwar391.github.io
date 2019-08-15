@@ -6,8 +6,8 @@ permalink:           pretty
 # Setup
 title:               Usman Anwar
 tagline:             'Another ML blog.'
-description:         'I am a senior in Electrical Engineering. I blog about Machine Learning and Intelligent Machines.'
-url:                 http://lanyon.getpoole.com
+description:         'I am a machine learning researcher at Information Technology University working with Dr. Ali Ahmed. I blog about Machine Learning and Intelligent Machines.'
+url:                 
 baseurl:             ''
 paginate:            5
 
