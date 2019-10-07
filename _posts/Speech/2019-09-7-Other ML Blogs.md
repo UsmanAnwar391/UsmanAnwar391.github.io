@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Deep Learning Based Approaches to Cocktail Party Problem
+title: Some Other ML Blogs
 mathjax: false
 ---
 While it is typically best to learn formally from a textbook, course or paper, sometimes well written blogs can fast pace your progress in a particular sub-field or area. I recently stumbled upon a nice list of ML blogs (with some sprinkling of differential geometry and optimization) on [reddit](https://www.reddit.com/r/MachineLearning/comments/azmo98/d_indepth_blogs_discussing_ml_and_the_math/) and have tried to consolidate it here and add to it a little. Almost all of these blogs are by professional scientists and researchers (in contrast to many hobbyist or newbies blogs you find on medium). This list is aimed at grad students and aspiring researchers like me and contains blogs which mainly tackle academic topics. You should think of these blogs as 'mini-papers' or 'lecture notes' as opposed to an informal blog to get the most out of them. Further note that due to complexity of the topics many of these blogs will assume that you at least have the equivalent mathematical proficiency to an undergrad in engineering or computer science. So, if you are still new to machine learning and/or not looking to get into machine learning research, this list is probably not for you. 
