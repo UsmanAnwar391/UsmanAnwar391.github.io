@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Some Other ML Blogs
-categories: [meta]
+categories: [Meta]
 mathjax: false
 ---
+> *This is a meta blog; it lists other machine learning and related blogs by noted scientists and researchers.*
+
 While it is typically best to learn formally from a textbook, course or paper, sometimes well written blogs can fast pace your progress in a particular sub-field or area. I recently stumbled upon a nice list of ML blogs (with some sprinkling of differential geometry and optimization) on [reddit](https://www.reddit.com/r/MachineLearning/comments/azmo98/d_indepth_blogs_discussing_ml_and_the_math/) and have tried to consolidate it here and add to it a little. Almost all of these blogs are by professional scientists and researchers (in contrast to many hobbyist or newbies blogs you find on medium). This list is aimed at grad students and aspiring researchers like me and contains blogs which mainly tackle academic topics. You should think of these blogs as 'mini-papers' or 'lecture notes' as opposed to an informal blog to get the most out of them. Further note that due to complexity of the topics many of these blogs will assume that you at least have the equivalent mathematical proficiency to an undergrad in engineering or computer science. So, if you are still new to machine learning and/or not looking to get into machine learning research, this list is probably not for you. 
 
 ## [Lil'Log](https://lilianweng.github.io/lil-log/)
@@ -22,7 +24,6 @@ There are few people who are as good at illustrating hard-to-digest stuff as Fer
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I&#39;ve never been accused of being over generous with compliments on technical writing. But <a href="https://twitter.com/fhuszar?ref_src=twsrc%5Etfw">@fhuszar</a> just always sets such a consistently high bar. He out-does himself with this marvelous blog post explaining Judea-Pearl-style do-Calculus <a href="https://t.co/0ii1yNyWzt">https://t.co/0ii1yNyWzt</a></p>&mdash; Zachary Lipton (@zacharylipton) <a href="https://twitter.com/zacharylipton/status/999748967767343104?ref_src=twsrc%5Etfw">May 24, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ## [Ben Racht's Blog: Arg Min](http://www.argmin.net/)
 Ben is the other half of Ali Rahimi's infamous NIPS Test Of Time Award Talk ['Machine Learning Has Become Alchemy'](http://www.argmin.net/2017/12/11/alchemy-addendum/) and a proficient researcher. Just like Sanjeev et al. Ben also leans towards theoretical machine learning and this reflects in his blogs (in fact, Ben's [first post](http://www.argmin.net/2016/03/24/saddles-again/) was on Sanjeev's blog). Ben also has a nice primer on reinforcement learning. 
