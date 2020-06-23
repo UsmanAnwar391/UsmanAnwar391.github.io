@@ -9,15 +9,15 @@ mathjax: true
 
 ## [Time Limits In Reinforcement Learning](https://arxiv.org/abs/1712.00378)
 
-#### Metadata
+### Metadata
 
 Paper was published at ICML 2019. 
 
-#### Motivation
+### Motivation
 
 Practically, all infinite horizon and finite horizon tasks in RL are dealt with as 'fixed' time horizon tasks. What are the implications of this? 
 
-#### Paper Summary
+### Paper Summary
 
 Goal of agent in RL is to maximize discounted sum of future rewards. In case of finite horizon tasks, the following form is valid by assuming that $R_t = 0 \ \ \forall \ \ t>T$ where $T$ is the length of horizon.  
 $$
@@ -42,7 +42,7 @@ Authors note that for time limited tasks, **Markov state must contain time index
     - $r + \gamma V_{\pi}(s)$ for all other states, including artificial termination. 
   - They show that with this kind of bootstrapping, agents trained with small time limit are able to perform well for significantly larger time limits at evaluation time. For example, hopper trained with bootstrapped reward and time limit $T=200$ reaches time limit of $T = 10^6$ often at test time. 
 
-#### What to read?
+### What to read?
 
 See this [poster](https://fabiopardo.github.io/posters/time_limits_in_rl.pdf). Read discussion section and experiments (2.4 onwards).
 
