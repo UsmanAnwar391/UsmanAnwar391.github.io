@@ -40,7 +40,7 @@ Breakout             |  Pong
 </h2>
 
 
-<img align="left" src="/images/GAIL/map20.jpg" alt="Made with Angular" title="Angular" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" width="100" alt="Made with Angular" title="Angular" hspace="20"/>
 <img align="left" src="/images/GAIL/map20.jpg" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
 <img align="left" src="/images/GAIL/map20.jpg" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
 <br/><br/><br/><br/><br/>
