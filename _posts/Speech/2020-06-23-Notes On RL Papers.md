@@ -29,8 +29,9 @@ G_{t:T} = R_{t+1} + \gamma R_{t+2} + ...+\gamma^{T-t-1} R_{T} = \sum_{k=1}^{T-t}
 $$
 Now the authors note that task of the RL agent may be to either 
 
-- a) maximize its reward over the fixed time period $[0,T]$ i.e. **time limited task.**
-- b) maximize its reward over an indefinite time period $[0, \infty]$ i.e. **time unlimited task.**
+1. Maximize its reward over the fixed time period $[0,T]$ i.e. **time limited task.**
+
+2. Maximize its reward over an indefinite time period $[0, \infty]$ i.e. **time unlimited task.**
 
 Authors note that for time limited tasks, **Markov state must contain time index or in other words, stationary policy does not exist for time limited tasks.** Hence, the only solution is to learn policies that are dependent on time. So, time left, that is $T-t$ is provided to the agent as input after normalizing it in the range $[-1,1]$. Authors give two examples which elaborate on this point. 
 
