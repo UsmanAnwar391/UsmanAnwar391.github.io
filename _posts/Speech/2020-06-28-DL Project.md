@@ -35,5 +35,5 @@ Breakout             |  Pong
     <center>Interpretations Using Grad-CAM</center>
 </h2>
 
-:-------------------------:|:-------------------------:
+:-------------------------:|:-------------------------:|:-------------------------:
 ![](/images/GAIL/map15.png)  |  ![](/images/GAIL/map16.png)  |  ![](/images/GAIL/map20.png)
