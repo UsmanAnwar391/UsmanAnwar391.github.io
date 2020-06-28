@@ -19,7 +19,6 @@ mathjax: true
 </p>
 
 <p float="left">
-  <img src="/images/GAIL/breakout.png" width="50%" />
-  <img src="/images/GAIL/pong.png" width="50%" /> 
+  <img src="/images/GAIL/breakout.png" width="50%" />  <img src="/images/GAIL/pong.png" width="50%" /> 
 </p>
 
