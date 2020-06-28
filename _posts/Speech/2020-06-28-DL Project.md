@@ -5,7 +5,7 @@ categories: [Projects]
 mathjax: true
 ---
 
-[[Code](..)] [[Report]()]
+[[Code](..)] [[Report]()] [[Poster]()]
 
 <h2>
     <center>Abstract</center>
@@ -42,7 +42,7 @@ Breakout             |  Pong
     We inspected the final policy to understand what regions in the image that policy was looking at; we used gradient class activation mapping method. Briefly, Grad-CAM backprops the gradients of the chosen action with respect to the input frames to the last convolution layer. Here the gradients are passed through relu activation, aggregated and then upsampled to dimension of input and then applied to the same multiplicatively. 
 </p>
 
-<img align="left" src="/images/GAIL/map20.jpg" width="250" alt="Made with Angular" title="Angular" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" width="250" style="vertical-align:middle;margin:0px 50px" alt="Made with Angular" title="Angular" hspace="20"/>
 <img align="left" src="/images/GAIL/map20.jpg" width="250" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
 <img align="left" src="/images/GAIL/map20.jpg" width="250" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
 <br/><br/><br/><br/><br/>
