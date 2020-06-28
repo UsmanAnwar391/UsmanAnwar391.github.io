@@ -42,5 +42,5 @@ Breakout             |  Pong
 
 ![alt-text-1](/images/GAIL/map15.jpg  "title-1") ![alt-text-2](/images/GAIL/map15.jpg  "title-2")
 
-![](/images/GAIL/map15.jpg)  |  ![](/images/GAIL/map16.jpg)  |  ![](/images/GAIL/map20.jpg)
+<center>![](/images/GAIL/map15.jpg) </center> |  ![](/images/GAIL/map16.jpg)  |  ![](/images/GAIL/map20.jpg)
 
