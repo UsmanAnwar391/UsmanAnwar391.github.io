@@ -39,7 +39,9 @@ Breakout             |  Pong
     <center>Interpretations Using Grad-CAM</center>
 </h2>
 <p align="justify">
-    We inspected the final policy to understand what regions in the image that policy was looking at; we used gradient class activation mapping method. Briefly, Grad-CAM backprops the gradients of the chosen action with respect to the input frames to the last convolution layer. Here the gradients are passed through relu activation, aggregated and then upsampled to dimension of input and then applied to the same multiplicatively. In Pong, it can be seen that agent learns to track the position of the ball and the opposing player's stick in order to determine its action.
+    We inspected the final policy to understand what regions in the image that policy was looking at; we used gradient class activation mapping method. Briefly, Grad-CAM backprops the gradients of the chosen action with respect to the input frames to the last convolution layer. Here the gradients are passed through relu activation, aggregated and then upsampled to dimension of input and then applied to the same multiplicatively. 
+    
+Below, we show some of the frames interpreted through this method for the game of Pong. It can be seen that agent learns to track the position of the ball and the opposing player's stick in order to determine its action.
 </p>
 
 <img align="left" src="/images/GAIL/map15.jpg" width="200" style="vertical-align:middle;margin:0px 0px" alt="Made with Angular" title="Angular" hspace="20"/>
