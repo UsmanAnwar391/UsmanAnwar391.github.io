@@ -20,11 +20,10 @@ mathjax: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P1BICZbX25U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-<p float="left">
-  <img src="/images/GAIL/breakout.png" width="40%" />  <img src="/images/GAIL/pong.png" width="40%" /> 
-</p>
+<h3>
+<center>Key Takeaways</center></h3>
 
-Solarized dark             |  Solarized Ocean
+Breakout             |  Pong
 :-------------------------:|:-------------------------:
 ![](/images/GAIL/breakout.png)  |  ![](/images/GAIL/pong.png)
 
