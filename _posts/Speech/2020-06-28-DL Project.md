@@ -4,6 +4,9 @@ title: Imitation Learning On Atari Games Using GAIL
 categories: [Projects]
 mathjax: true
 ---
+
+[[Code](..)] [[Report]()]
+
 <h2>
     <center>Abstract</center>
 </h2>
@@ -16,6 +19,7 @@ mathjax: true
 <h3>
     <center>Video Demos</center>
 </h3>
+
 
 
 <p align="center">
@@ -34,6 +38,9 @@ Breakout             |  Pong
 <h2>
     <center>Interpretations Using Grad-CAM</center>
 </h2>
-:-------------------------:|:-------------------------:|:-------------------------:
+
+
+![alt-text-1](/images/GAIL/map15.jpg  "title-1") ![alt-text-2](/images/GAIL/map15.jpg  "title-2")
+
 ![](/images/GAIL/map15.jpg)  |  ![](/images/GAIL/map16.jpg)  |  ![](/images/GAIL/map20.jpg)
 
