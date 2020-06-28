@@ -44,8 +44,11 @@ Breakout             |  Pong
 Below, we show some of the frames interpreted through this method for the game of Pong. It can be seen that agent learns to track the position of the ball and the opposing player's stick in order to determine its action.
 </p>
 
+<p align="middle">
+
 <img align="left" src="/images/GAIL/map15.jpg" width="200" style="vertical-align:middle;margin:0px 15px" alt="Made with Angular" title="Angular" hspace="20"/>
 <img align="left" src="/images/GAIL/map16.jpg" width="200" style="vertical-align:middle;margin:0px 25px" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
 <img align="left" src="/images/GAIL/map20.jpg" width="200" style="vertical-align:middle;margin:0px 0px" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
 <br/><br/><br/><br/><br/>
 
+</p>
