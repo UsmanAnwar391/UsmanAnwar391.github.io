@@ -40,7 +40,12 @@ Breakout             |  Pong
 </h2>
 
 
-![alt-text-1](/images/GAIL/map15.jpg  "title-1") ![alt-text-2](/images/GAIL/map15.jpg  "title-2")
+<img align="left" src="/images/GAIL/map20.jpg" alt="Made with Angular" title="Angular" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
+<br/><br/><br/><br/><br/>
 
-<center>![](/images/GAIL/map15.jpg) </center> |  ![](/images/GAIL/map16.jpg)  |  ![](/images/GAIL/map20.jpg)
+
+
+![](/images/GAIL/map15.jpg)  |  ![](/images/GAIL/map16.jpg)  |  ![](/images/GAIL/map20.jpg)
 
