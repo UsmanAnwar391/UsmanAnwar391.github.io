@@ -18,9 +18,8 @@ mathjax: true
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P1BICZbX25U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-```html
 <p float="left">
-  <img src="/images/GAIL/breakout.png" width="50%" />
-  <img src="/images/GAIL/pong.png" width="50%" /> 
+  <img src="/images/GAIL/breakout.png" width="50" />
+  <img src="/images/GAIL/pong.png" width="50" /> 
 </p>
-```
+
