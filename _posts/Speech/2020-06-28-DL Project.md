@@ -38,11 +38,11 @@ Breakout             |  Pong
 <h2>
     <center>Interpretations Using Grad-CAM</center>
 </h2>
+We inspected the final policy to understand what regions in the image that policy was looking at; we used gradient class activation mapping method. Briefly, Grad-CAM backprops the gradients of the chosen action with respect to the input frames to the last convolution layer. Here the gradients are passed through relu activation, aggregated and then upsampled to dimension of input and then applied to the same multiplicatively. 
 
-
-<img align="left" src="/images/GAIL/map20.jpg" width="100" alt="Made with Angular" title="Angular" hspace="20"/>
-<img align="left" src="/images/GAIL/map20.jpg" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
-<img align="left" src="/images/GAIL/map20.jpg" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" width="140" alt="Made with Angular" title="Angular" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" width="140" alt="Made with Bootstrap" title="Bootstrap" hspace="20"/>
+<img align="left" src="/images/GAIL/map20.jpg" width="140" alt="Developed using Browsersync" title="Browsersync" hspace="20"/>
 <br/><br/><br/><br/><br/>
 
 
