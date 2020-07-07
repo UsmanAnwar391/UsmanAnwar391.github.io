@@ -5,7 +5,7 @@ categories: [Projects]
 mathjax: true
 ---
 
-[[Code](..)] [[Report]()] [[Poster]()]
+[[Code](https://github.com/Usman-ITU/MSDS19001_Project_DLSpring2020/)] [[Report](https://github.com/Usman-ITU/MSDS19001_Project_DLSpring2020/blob/master/Miscalleneous/G1W%20-%20Report.pdf)] [[Poster](https://github.com/Usman-ITU/MSDS19001_Project_DLSpring2020/blob/master/Miscalleneous/G1W%20-%20Poster.svg)]
 
 <h2>
     <center>Abstract</center>
