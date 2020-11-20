@@ -11,12 +11,12 @@ You can find my CV [here](https://uzman-anwar.github.io/Usman_Anwar.pdf).
 
 ## Publications
 
-### 1. Inverse Constrained Reinforcement Learning
-**Usman Anwar**, Shehryar Malik, Alireza Aghasi, Ali Ahmed
-Under Review At ICLR 2021
+### 1. Inverse Constrained Reinforcement Learning \\
+**Usman Anwar**, Shehryar Malik, Alireza Aghasi, Ali Ahmed \\
+Under Review At ICLR 2021 \\
 [Arxiv Preprint](https://arxiv.org/abs/2011.09999).
 
-### 2. Learning To Solve Differential Equations Across Initial Conditions
-Shehryar Malik, **Usman Anwar**, Ali Ahmed, Alireza Aghasi
-ICLR 2020 Workshop on Integration of DeepNeural Models and Differential Equations
+### 2. Learning To Solve Differential Equations Across Initial Conditions \\
+Shehryar Malik, **Usman Anwar**, Ali Ahmed, Alireza Aghasi \\
+ICLR 2020 Workshop on Integration of DeepNeural Models and Differential Equations \\
 [Paper](https://arxiv.org/abs/2003.12159).
