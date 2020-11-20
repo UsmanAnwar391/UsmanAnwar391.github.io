@@ -7,4 +7,16 @@ I am Usman Anwar. I read and learn about Machine Learning. Sometimes I blog abou
 
 You can find my CV [here](https://uzman-anwar.github.io/Usman_Anwar.pdf).
 
-I am also currently managing [Spectra Magazine](http://www.spectramagazine.org). Check that out as well. If you want to contribute to Spectra, in any capacity, drop me an email at [usman@spectramagazine.org](mailto:usman@spectramagazine.org)
+
+
+## Publications
+
+### 1. Inverse Constrained Reinforcement Learning
+**Usman Anwar**, Shehryar Malik, Alireza Aghasi, Ali Ahmed
+Under Review At ICLR 2021
+[Arxiv Preprint](https://arxiv.org/abs/2011.09999).
+
+### 2. Learning To Solve Differential Equations Across Initial Conditions
+Shehryar Malik, **Usman Anwar**, Ali Ahmed, Alireza Aghasi
+ICLR 2020 Workshop on Integration of DeepNeural Models and Differential Equations
+[Paper](https://arxiv.org/abs/2003.12159).
