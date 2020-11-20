@@ -51,9 +51,7 @@ $$L_{\theta_{old}}(\theta) = \mathbb{E}_{s \sim d^{\theta_{old}}(s), a \sim \the
 By Taylor series expansion of $L_{\theta_{old}}(\theta)$ around $\theta_{old}$.
 
 $$
-\begin{align}
 L_{\theta_{old}}(\theta) \approx L_{\theta_{old}}(\theta_{old}) + \nabla_\theta L_{\theta_{old}}(\theta)\Big |_{\theta=\theta_{old}} (\theta - \theta_{old})
-\end{align}
 $$ $$ \begin{align}L_{\theta_{old}}(\theta_{old}) &= \mathbb{E}_{s,a \sim \theta_{old}}[A^{\theta_{old}}(a,s)] 
 \\ &= \mathbb{E}_{s,a \sim \theta_{old}}[Q^{\theta_{old}}(a,s) - V^{\theta_{old}}(s)]
 \\ &= \mathbb{E}_{s}[\mathbb{E}_{a \sim \theta_{old}}[Q^{\theta_{old}}(a,s)]] - \mathbb{E}_{s,a \sim \theta_{old}}[V^{\theta_{old}}(s)] 
