@@ -7,7 +7,7 @@ I am Usman Anwar. I read and learn about Machine Learning. Sometimes I blog abou
 <!--- [linkedin](https://www.linkedin.com/in/usman-anwar-9b4384107/),[facebook](https://www.facebook.com/usmananwar345), [twitter](https://www.twitter.com/rantistan) or -->
 
 
-[CV](https://uzman-anwar.github.io/Usman_Anwar.pdf),[email](mailto:usmananwar391@gmail.com). 
+[[CV]](https://uzman-anwar.github.io/Usman_Anwar.pdf) [[email]](mailto:usmananwar391@gmail.com). 
 
 
 
