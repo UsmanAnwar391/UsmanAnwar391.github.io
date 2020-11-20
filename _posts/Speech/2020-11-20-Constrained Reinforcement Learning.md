@@ -47,23 +47,19 @@ The paper is not well written (lots of useless mathiness) but contains some inte
 This paper considers a Gaussian Process Regression where not only positive examples are available (to which Gaussian Process must fit), but also negative examples which should not be fit. 
 
 This paper models these negative data pints as blobs of Gaussian $\mathcal{N}^-$ and *maximizes* the divergence of the $\mathcal{GP}$ with respect to the negative data points distribution $\mathcal{N}^-$.
-
+<!-- 
 :::success
 There is no approach currently which tries to build a neural network based world model with such constraints. This may be a direction worth trying out.
-:::
+::: -->
 
 ---
 
 ## Safe Reinforcement Learning With Natural Language Constraints
 
-:::info
 This paper categorizes constraints as to be of three types: 
 1. Budget Constraints: You can do thing X but only Y times.
 2. Relation Constraints: You must keep away from walls by 4 units.
 3. Sequential Constraints (Non-Markovian): You can do thing X only if you have done thing Y before.
-
-Will be interesting to add a similar discussion in our ICRL paper.
-:::
 
 This paper proposes to use "Natural Language" to specify constraints. A "constraint interpreter" module is introduced which takes current observation embedding and natural text embedding as input and produces a "constraint mask" and "budget mask" which are then concatenated with observation embedding and fed to policy network which produces an action. 
 
@@ -71,17 +67,12 @@ Constraint interpreter network is pre-trained by maximizing a binary cross entro
 
 Policy is then trained by Projection Based Constrained Policy Optimization (PCPO) where budget mask values are used as approximation of true cost.
 
-:::warning
 I am unsure about where the cost estimate comes from, my guess is this comes from budget mask but this is only weakly alluded to in second last paragraph of page 4 (line 5).
-:::
 
-:::danger
 **My Concerns**
 1. It seems like that in constraint interpreter module pre-training (eq 2 and eq 3 in paper and paragraph above Experiments section), authors assume knowledge of true cost mask and true budget threshold. Is this a good thing? If you already know these then why even bother with natural language constraints? 
 
 2. They use budget mask values as an approximation of true cost, but this mask quality is dependent on constraint interpreter module and expected to evolve with training? Will this not result in optimization problems similar to the ones faced by us in CIRL? Plus is the cost not associated with 
-
-:::
 
 ---
 
@@ -127,41 +118,11 @@ R(s_t, a_t, s_{t+1}) \hspace{43pt} if \hspace{10pt} \alpha_t = 1 \\
 
 This is equivalent to setting a reward of constrained state equal to the average reward of states that an agent can transition to from the said constrained state. Intuitively, this serves as incentive for the agent to get out of that state quickly.
 
-:::info
+**My Concerns**
 We do not want to go into a constrained state, hence, should we not try to ensure that (effective) reward of going into a constrained state $s^c$ from current state $s$ should be less than of all possible safe states $s'$ we could transition to from $s$?
 
 Alternatively, what if the expectation is not over the next possible states, but the previous states (states from which a transistion to constrained state could have been made)?
-:::
 
-
-:::success
-Consider a one step MDP where reward of constrained transition is higher than all other transitions; in this even where this reward is replaced with expected one step reward; it remains higher than the other transitions and does not dissuade agent from carrying out that transition.
-
-Instead of the proposed reward shaping, I (Usman Anwar) propose the following reward shaping (Shehryar Malik desires dissociation with this):
-$$\begin{equation}
-\bar R(s_t, a_t, s_{t+1}) = 
-\begin{cases}
-\mathbb{E}_{a, s' \sim \tau} [R(s_t, a_t, s')] + R(s_t, a_t, s_{t+1}) \hspace{10pt} if \hspace{10pt} \alpha_t = 1 \\
-\mathbb{E}_{a, s' \sim \tau} [R(s_t, a_t, s')] \hspace{80pt} if \hspace{10pt} \alpha_t = 0
-\end{cases}
-\end{equation}$$
-
-Under the assumption that rewards are lower bounded by 0; i.e. there is no negative reward, this reward shaping intuitively sets the reward of constrained transitions equal to average one step reward and reward of unconstrained transitions equal to sum of average one step reward plus reward for that transition; thus *disincentivizing* constrained transition. 
-
-Let $\hat r= \mathbb{E}_{a, s' \sim \tau} [R(s_t, a_t, s')] = V(s_t) - \gamma V(s_{t+1})$ (See Appendix (7.4) of this paper for this identity.)
-
-Then our shaped reward at any time step $t$ is $\bar r_t = \hat r_t + \alpha_t r_t$. 
-
-Then, with symbols $\hat{A}_t^{(k)}$ and $\hat{A}_t^{\text{GAE}(\gamma, \lambda)}$ having the same meaning as GAE paper, 
-
-
-$$\hat{A}_t^{(k)} = \sum_{l=0}^{k-1} \delta_{t+l}^V =\sum_{l=0}^{k-1}\gamma \alpha_{t+l}r_{t+l}$$
-
-$$\hat{A}_t^{\text{GAE}(\gamma, \lambda)} = \sum_{l=0}^{\infty}(\gamma \lambda)^l\delta_{t+l}^V = \sum_{l=0}^{\infty}(\gamma \lambda)^l \alpha_{t+l}r_{t+l}$$
-
-This is easy to follow as $\delta_t^V = \bar r_t + \gamma V(s_{t+1}) - V(s_t)$ is the TD return using shaped reward and $\bar r_t$ is the shaped reward. Putting in value of $\bar r_t$ gives $\delta_t^V = (V(s_t) - \gamma V(s_{t+1}) + \alpha_t r_t) + \gamma V(s_{t+1}) - V(s_t) = \alpha_t r_t$. 
-
-:::
 ---
 
 ## Density Constrained Reinforcement Learning
@@ -175,9 +136,8 @@ $$\rho^\pi(s) = \sum_{t=0}^\infty \gamma^t P(s^t=s|\pi, s_0 \sim \phi)$$
 It is easy to show that we can rewrite $\rho^\pi(s)$ as follows:
 $$\rho^\pi(s) = \phi(s) + \gamma \int_\mathcal{S} \int_\mathcal{A} \pi(a|s') P(s'|s, a) \rho^\pi(s') da \ ds'$$
 
-:::success
+
 **Density Constrained RL (DCRL) Problem**: Given a MDP $\mathcal{M} = <\mathcal{S}, \mathcal{A}, P, R, \gamma>$ and an initial state distribution $\phi(s)$, DCRL finds the optimal policy $\pi^*$ that maximizes the expectation of reward signal $\int_\mathcal{S} \phi(s) V^\pi(s) ds$ subject to constraints on stationary density function represented as $\rho_\min(s) \leq \rho^{\pi^*}(s) \leq \rho_\max(s) \ \forall s \in \mathcal{S}.$
-:::
 
 Note that in stoachastic dynamics setting, $r(s,a) = \int_\mathcal{S}P(s'|s,a)R(s', a, s) ds$ is the expected reward attained when action $a$ is executed in state $s$.  
 
@@ -204,13 +164,9 @@ Based on the observation above, paper proposes to solve DCRL problem by updating
 $$\sigma_+ = \max(0, \sigma_+ + \alpha(\rho^\pi - \rho_\max)) \\
   \sigma_- = \max(0, \sigma_+ + \alpha(\rho_\min - \rho^\pi))$$
 
-:::warning
-My best guess here is that $\alpha$ here is learning rate, however, the paper also uses $\alpha$ to denote budget. There is lack of clarity on this in the paper.
-:::
 
 Section 3.3 in the paper text is relevant for implementation and includes details on how to compute state density function and Lagrange Multiplier updates.
 
-:::danger
 **My Concerns**
+There is lack of clarity on $\alpha$ in the paper; it is used to refer to both budget and learning rate.
 Not obvious how to set $\rho_\max$ and $\rho_\min$; especially the fact that these are unnormalized and discounted densities makes it counter intuitive to select a value for them easily. Details on this may perhaps be available in this paper: https://arxiv.org/pdf/1902.09583.pdf.
-:::
