@@ -11,7 +11,7 @@ I am Usman Anwar. I read and learn about Machine Learning. Sometimes I blog abou
 
 
 
-### Publications
+## Publications
 ---
 ### 1. Inverse Constrained Reinforcement Learning <br>
 **Usman Anwar**, Shehryar Malik, Alireza Aghasi, Ali Ahmed <br>
