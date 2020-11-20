@@ -5,7 +5,7 @@ categories: [Research Papers, Reinforcement Learning]
 mathjax: true
 ---
 
-## Time Limits In Reinforcement Learning[Paper](https://arxiv.org/abs/1712.00378)
+## Time Limits In Reinforcement Learning [[Paper]](https://arxiv.org/abs/1712.00378)
 
 ### Metadata
 
