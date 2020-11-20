@@ -1,13 +1,11 @@
 ---
 layout: post
-title: Notes On RL Papers
-categories: [Research Papers]
+title: Time Limits In RL
+categories: [Research Papers, Reinforcement Learning]
 mathjax: true
 ---
 
-> This post contains notes on different RL papers that I have gone through. Please note that these notes are primarily meant for my understanding and I bear no responsibility of their correctness.
-
-## [Time Limits In Reinforcement Learning](https://arxiv.org/abs/1712.00378)
+## Time Limits In Reinforcement Learning[Paper](https://arxiv.org/abs/1712.00378)
 
 ### Metadata
 
