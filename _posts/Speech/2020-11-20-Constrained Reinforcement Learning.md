@@ -30,7 +30,7 @@ This paper uses Hierarchical RL to iteratively learn the the preference vector $
 ## Reconnaissance For Reinforcement Learning With Safety Constraints
 The idea in this paper is to decompose the CMDP into *Reconnaissance MDP (R-MDP)* and *Planning MDP (P-MDP)*. Constraint or cost function is minimized in R-MDP and this results in  a safe baseline policy $\pi_{\text{safe}}$.
 
-For a given state, all the actions deemed safe by $\pi_{\text{safe}}$ form a set of safe actions $\mathcal{A}_{\text{safe}} \subseteq \mathcal{A}$ and all the states that have at least one safe action make a set of safe states $\mathcal{S}_{\text{safe}}$. 
+For a given state, all the actions deemed safe by $\pi_{\text{safe}}$ form a set of safe actions $\mathcal{A}_{\text{safe}} \subseteq \mathcal{A} $ and all the states that have at least one safe action make a set of safe states $ \mathcal{S}_{\text{safe}}$. 
 
 Then we can define a space of safe policies with respect to $\pi_{text{safe}}$ as follows:
 

@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Trust Region Policy Optimization & Constrained Policy Optimization
-categories: [Research Papers, Reinforcement Learning]
+categories: [Reinforcement Learning]
 mathjax: true
 ---
 
-# Trust Region Policy Optimization
+## Trust Region Policy Optimization
 Due to Kakade and Langford 2002, we have the following result comparing the return of two policies $\pi$ and $\pi'$. 
 
 $$
@@ -32,7 +32,7 @@ C = \frac{4\epsilon \gamma}{(1-\gamma)^2} \hspace{10pt},  \hspace{30pt} \epsilon
 $$ 
 ::: -->
 
-This gives us an alternative objective to maximize. Further note that we have policies paramterized with $\theta$ and we denote current policy paramters as $\theta_{old}$. $$\max_\theta [L_{\theta_{old}}(\theta) - C D_{KL}^{\text{max}}(\pi, \pi')]$$. This objective has two problems 
+This gives us an alternative objective to maximize. Further note that we have policies paramterized with $\theta$ and we denote current policy paramters as $\theta_{old}$. $$\max_\theta [L_{\theta_{old}}(\theta) - C D_{KL}^{\text{max}}(\theta, \theta')]$$. This objective has two problems 
 
 (1) Step size $C$ suggested by theory is very small; making this objective impractical.
 (2) Further, evaluation of $D_{KL}^{\text{max}}(\theta_{old}, \theta)$ is intractable for high dimensional state space.
