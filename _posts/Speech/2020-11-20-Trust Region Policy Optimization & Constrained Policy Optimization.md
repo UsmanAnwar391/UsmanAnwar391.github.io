@@ -23,14 +23,14 @@ $$
 J(\pi') \approx L_\pi(\pi') = J(\pi) + \mathbb{E}_{\substack{s \sim d^{\pi} \\ a \sim \pi'}}[A^\pi(s, a)]
 $$
 
-:::info
+<!-- :::info
 ### Why this approximation is valid?
 Theorem 1 of TRPO paper shows that approximation error is bounded by the KL divergence between the current and new policy.
 
 $$L_\pi(\pi') - J(\pi') \leq C D_{KL}^{\text{max}}(\pi, \pi')$$ where $$D_{KL}^{\text{max}}(\pi, \pi') = \max _s D_{KL}(\pi(\cdot|s)|\pi'(\cdot|s)) \\ 
 C = \frac{4\epsilon \gamma}{(1-\gamma)^2} \hspace{10pt},  \hspace{30pt} \epsilon = \max_s |\mathbb{E}_{a \sim \pi'}[A^\pi (s, a)]|
 $$ 
-:::
+::: -->
 
 This gives us an alternative objective to maximize. Further note that we have policies paramterized with $\theta$ and we denote current policy paramters as $\theta_{old}$. $$\max_\theta [L_{\theta_{old}}(\theta) - C D_{KL}^{\text{max}}(\pi, \pi')]$$. This objective has two problems 
 
@@ -39,7 +39,8 @@ This gives us an alternative objective to maximize. Further note that we have po
 
 To fix (1), we convert the penalty by KL divergence into an explicit constraint. For (2), we use average KL divergence between the two policies instead of the maximum KL divergence. This gives us the following form of objective:
 
-$$\max_\theta L_{\theta_{old}}(\theta) \hspace{10pt} \text{s.t.} \hspace{10pt} \bar D_{KL}(\theta_{old}, \theta) < \delta$$ where $$\bar D_{KL}(\theta_{old}, \theta) = \mathbb{E}_{s \sim \theta_{old}}[D_{KL}(\theta_{old}(\cdot|s)|\theta(\cdot|s))]$$. We modify the objective $L_{\theta_{old}}(\theta) = \sum_s d^{\theta_{old}}(s) \sum_a \pi(a|s) A^{\theta_{old}}(a,s)$ by replacing the sums over states and ations with expectations. 
+$$
+\max_\theta L_{\theta_{old}}(\theta) \hspace{10pt} \text{s.t.} \hspace{10pt} \bar D_{KL}(\theta_{old}, \theta) < \delta$$ where $$\bar D_{KL}(\theta_{old}, \theta) = \mathbb{E}_{s \sim \theta_{old}}[D_{KL}(\theta_{old}(\cdot|s)|\theta(\cdot|s))]$$. We modify the objective $L_{\theta_{old}}(\theta) = \sum_s d^{\theta_{old}}(s) \sum_a \pi(a|s) A^{\theta_{old}}(a,s)$ by replacing the sums over states and ations with expectations. 
 
 $$L_{\theta_{old}}(\theta) = \mathbb{E}_{s \sim d^{\theta_{old}}(s), a \sim \theta(a|s)} [A^{\theta_{old}}(a,s)] \hspace{10pt} \text{s.t.} \hspace{10pt} \bar D_{KL}(\theta_{old}, \theta) < \delta$$. Note that we do not yet know $\theta(a|s)$ making it difficult to sample from this distribution. Hence, instead of using expectation over $\theta(a|s)$, we instead use an importance sampling estimator with $\theta_{old}(a|s)$ as the sampling distribution. 
 
